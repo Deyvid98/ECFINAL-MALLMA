@@ -21,7 +21,7 @@ class HomePage extends React.Component {
 	render() {
 		return (
 			<>
-				<h1>Semana 12 App (componente: HomePage)</h1>
+				<h1>Semana 1221 App (componente: HomePage)</h1>
 				<Titulo entidad="Intrumentos" emoji="🎸" />
 				<InstrumentoList instrumentos={this.state.instrumentos} />
 				<Link to="/nuevo-instrumento">Nuevo Instrumento</Link>
