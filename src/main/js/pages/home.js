@@ -23,11 +23,11 @@ class HomePage extends React.Component {
 			<>
 				<h1>EC FINAL (componente: HomePage)</h1>
 
-				<Titulo entidad="Cursos" emoji="🎸" />
+				<Titulo entidad="Cursos" emoji="📝" />
 				<CursoList cursos={this.state.cursos} />
 				<Link to="/nuevo-curso">Nuevo Curso</Link>
 
-				<Titulo entidad="Alumno" emoji="🎶" />
+				<Titulo entidad="Alumno" emoji="👨‍🎓" />
 				<AlumnoList alumnos={this.state.alumnos} />
 				<Link to="/nuevo-alumno">Nuevo Alumno</Link>
 			</>
@@ -91,9 +91,10 @@ class Curso extends React.Component {
 		return (
 			<tr>
 				<td>{this.props.curso.nombre}</td>
-				<td>{this.props.curso.categoria}</td>
+				<td>{this.props.curso.materia}</td>
 				<td>
 					<Link to={"/ver-curso/" + id}>Ver</Link>
+					<Link to={"/editar-curso/" + id}>Editar</Link>
 				</td>
 			</tr>
 		)
