@@ -24,8 +24,8 @@ const VerCursoPage = () => {
                     <td>{curso.nombre}</td>
                 </tr>
                 <tr>
-                    <th>Categoría</th>
-                    <td>{curso.categoria}</td>
+                    <th>Materia</th>
+                    <td>{curso.materia}</td>
                 </tr>
                 <tr>
                     <th>Descripción</th>

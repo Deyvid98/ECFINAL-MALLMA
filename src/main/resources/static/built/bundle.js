@@ -40989,7 +40989,7 @@ var CursoList = /*#__PURE__*/function (_React$Component2) {
     key: "render",
     value: function render() {
       var cursos = this.props.cursos.map(function (curso) {
-        return /*#__PURE__*/React.createElement(CursoList, {
+        return /*#__PURE__*/React.createElement(Curso, {
           key: curso._links.self.href,
           curso: curso
         });
@@ -41280,7 +41280,7 @@ var VerCursoPage = function VerCursoPage() {
   }).done(function (response) {
     return setCurso(response.entity);
   });
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Ver Cursos"), /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Nombre"), /*#__PURE__*/React.createElement("td", null, curso.nombre)), /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Categor\xEDa"), /*#__PURE__*/React.createElement("td", null, curso.categoria)), /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Descripci\xF3n"), /*#__PURE__*/React.createElement("td", null, curso.descripcion))), /*#__PURE__*/React.createElement(Link, {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Ver Cursos"), /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Nombre"), /*#__PURE__*/React.createElement("td", null, curso.nombre)), /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Materia"), /*#__PURE__*/React.createElement("td", null, curso.materia)), /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Descripci\xF3n"), /*#__PURE__*/React.createElement("td", null, curso.descripcion))), /*#__PURE__*/React.createElement(Link, {
     to: "/"
   }, "Volver"));
 };

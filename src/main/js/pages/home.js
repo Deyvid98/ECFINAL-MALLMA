@@ -50,7 +50,7 @@ const Titulo = (props) => {
 class CursoList extends React.Component {
 	render() {
 		const cursos = this.props.cursos.map(curso =>
-			<CursoList key={curso._links.self.href} curso={curso} />
+			<Curso key={curso._links.self.href} curso={curso} />
 		);
 		return (
 			<table border="1">
