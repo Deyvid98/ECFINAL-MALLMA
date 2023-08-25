@@ -21,7 +21,7 @@ class HomePage extends React.Component {
 	render() {
 		return (
 			<>
-				<h1>EC FINAL (componente: HomePage)</h1>
+				<h1>EC FINAL </h1>
 
 				<Titulo entidad="Cursos" emoji="📝" />
 				<CursoList cursos={this.state.cursos} />

@@ -41022,7 +41022,7 @@ var HomePage = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "EC FINAL (componente: HomePage)"), /*#__PURE__*/React.createElement(Titulo, {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "EC FINAL "), /*#__PURE__*/React.createElement(Titulo, {
         entidad: "Cursos",
         emoji: "\uD83D\uDCDD"
       }), /*#__PURE__*/React.createElement(CursoList, {
