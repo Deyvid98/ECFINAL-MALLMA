@@ -7,14 +7,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
-public class Musico {
+public class Alumno {
 
 	private @Id @GeneratedValue Long id;
 	private String nombre;
 
-	private Musico() {}
+	private Alumno() {}
 
-	public Musico(String nombre) {
+	public Alumno(String nombre) {
 		this.nombre = nombre;
 	}
 
@@ -24,9 +24,9 @@ public class Musico {
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
-		Musico musico = (Musico) o;
-		return Objects.equals(id, musico.id) &&
-			Objects.equals(nombre, musico.nombre);
+		Alumno alumno = (Alumno) o;
+		return Objects.equals(id, alumno.id) &&
+			Objects.equals(nombre, alumno.nombre);
 	}
 
 	@Override
@@ -59,5 +59,7 @@ public class Musico {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
+	
 
 }

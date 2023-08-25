@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
 public class DatabaseLoader implements CommandLineRunner {
 
 	private final CursoRepository repositoryC;
-	private final MusicoRepository repositoryM;
+	private final AlumnoRepository repositoryA;
 
 	@Autowired
-	public DatabaseLoader(CursoRepository repositoryI, MusicoRepository repositoryM) {
+	public DatabaseLoader(CursoRepository repositoryI, AlumnoRepository repositoryA) {
 		this.repositoryC = repositoryI;
-		this.repositoryM = repositoryM;
+		this.repositoryA = repositoryA;
 	}
 
 	@Override
@@ -22,6 +22,8 @@ public class DatabaseLoader implements CommandLineRunner {
 		this.repositoryC.save(new Curso("Geometria Espacial","Matetamtica","4 Creditos"));
 		this.repositoryC.save(new Curso("Literatura","Ciencia","1 Creditos"));
 		this.repositoryC.save(new Curso("Historia Contemporanea","Ciencia","2 Creditos"));
-		this.repositoryM.save(new Musico("Daniel F"));
+		
+		this.repositoryA.save(new Alumno("Deyvid Mallma"));
+		this.repositoryA.save(new Alumno("Williams Huillca"));
 	}
 }

@@ -6,7 +6,7 @@ const client = require('../client');
 
 
 
-const NuevoMusicoPage = () => {
+const NuevoAlumnoPage = () => {
 
     const [nombre, setNombre] = useState('')
 
@@ -14,7 +14,7 @@ const NuevoMusicoPage = () => {
         evento.preventDefault();
         client({
             method: 'POST',
-            path: '/api/musicos',
+            path: '/api/alumnos',
             entity: {nombre: nombre},
             headers: {'Content-Type': 'application/json'}
         }).done(()=>{
@@ -24,15 +24,15 @@ const NuevoMusicoPage = () => {
 
     return (
         <>
-        <h1>Nuevo Músico</h1>
+        <h1>Nuevo Alumno</h1>
         <form onSubmit={handleSubmit}>
             <label>Nombre</label> <br />
             <input type="text" id='nombre' name='nombre' onChange={e=>setNombre(e.target.value)} /> <br />
-            <input type="submit" value="Nuevo Músico" />
+            <input type="submit" value="Nuevo Alumno" />
         </form>
         <Link to="/">Volver</Link>
         </>
     )
 }
 
-module.exports = NuevoMusicoPage;
+module.exports = NuevoAlumnoPage;

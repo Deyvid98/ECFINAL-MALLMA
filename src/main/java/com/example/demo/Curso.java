@@ -45,7 +45,7 @@ public class Curso {
 		return "Curso{" +
 			"id=" + id +
 			", nombre='" + nombre + '\'' +
-			", categoria='" + materia + '\'' +
+			", materia='" + materia + '\'' +
 			", descripcion='" + descripcion + '\'' +
 			'}';
 	}

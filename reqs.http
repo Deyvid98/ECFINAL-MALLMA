@@ -1,15 +1,15 @@
 @server = https://shiny-space-fiesta-7v9rx477x45w26qp-8080.app.github.dev
 ###
-GET {{server}}/api/instrumentos/2
+GET {{server}}/api/cursos
 ###
-POST {{server}}/api/instrumentos
+POST {{server}}/api/cursos
 Content-Type: application/json
 
-{"nombre": "Quena", "categoria": "Viento", "descripcion": "Como una flauta"}
+{"nombre": "Gestion de la Creatividad", "materia": "Social", "descripcion": "1 Creditos"}
 ###
-GET {{server}}/api/musicos
+GET {{server}}/api/alumnos
 ###
-POST {{server}}/api/musicos
+POST {{server}}/api/alumnos
 Content-Type: application/json
 
 {"nombre": "Joaquín"}
